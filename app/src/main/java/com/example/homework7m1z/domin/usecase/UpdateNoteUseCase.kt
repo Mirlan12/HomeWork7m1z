@@ -1,11 +1,11 @@
 package com.example.homework7m1z.domin.usecase
 
+import com.example.homework7m1z.domin.model.Note
 import com.example.homework7m1z.domin.repository.NoteRepository
 import javax.inject.Inject
 
-class GetAllNotesUseCase @Inject constructor(
+class UpdateNoteUseCase @Inject constructor(
     private val noteRepository: NoteRepository
 ) {
-
-    fun getAllNotes() = noteRepository.getAllNotes()
+    fun updateNote(note: Note) = noteRepository.updateNote(note)
 }
